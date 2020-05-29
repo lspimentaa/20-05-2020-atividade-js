@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Exercício 02</title>
+</head>
+
+<body>    
+</body>
+
+<script>
+//Atividade 2
+    let livros = [
+        {
+            titulo: "Lar da Senhorita Peregrine para Crianças Peculiares",
+            autor: "Ransom Riggs",
+            lido: true,
+        },
+        {
+            titulo: "Cidade dos Étereos",
+            autor: "Ransom Riggs",
+            lido: true,
+        },
+        {
+            titulo: "Biblioteca de Almas",
+            autor: "Ransom Riggs",
+            lido: true,
+        },
+        {
+            titulo: "Mapa dos Dias",
+            autor: "Ransom Riggs",
+            lido: true,
+        },
+		{
+            titulo: "A Convenção das Aves",
+            autor: "Ransom Riggs",
+            lido: false,
+        } 		
+    ]  
+    livros.forEach(element => {
+        if(element.lido){
+            console.log(`Você já leu este livro – ${element.titulo} – ${element.autor}`)
+        }else{
+            console.log(`Você não leu este livro – ${element.titulo} – ${element.autor}`)
+        }   
+    }); 
+</script>
